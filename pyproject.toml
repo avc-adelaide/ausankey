@@ -49,11 +49,11 @@ classifiers = [
 
 
 [project.urls]
-Homepage = "https://github.com/AUMAG/ausankey"
-Documentation = "https://aumag.github.io/ausankey/"
-Repository = "https://github.com/AUMAG/ausankey.git"
-Issues = "https://github.com/AUMAG/ausankey/issues"
-Changelog = "https://github.com/AUMAG/ausankey/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/avc-adelaide/ausankey"
+Documentation = "https://avc-adelaide.github.io/ausankey/"
+Repository = "https://github.com/avc-adelaide/ausankey.git"
+Issues = "https://github.com/avc-adelaide/ausankey/issues"
+Changelog = "https://github.com/avc-adelaide/ausankey/blob/master/CHANGELOG.md"
 
 
 [tool.hatch.build.targets.wheel]

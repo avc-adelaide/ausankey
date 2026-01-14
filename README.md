@@ -4,24 +4,24 @@ Uses matplotlib to create simple <a href="https://en.wikipedia.org/wiki/Sankey_d
 Sankey diagrams</a> flowing only from left to right.
 
 [![PyPI version](https://badge.fury.io/py/auSankey.svg)](https://badge.fury.io/py/auSankey)
-[![Coverage Status](https://coveralls.io/repos/github/AUMAG/auSankey/badge.svg?branch=main)](https://coveralls.io/github/AUMAG/auSankey?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/avc-adelaide/auSankey/badge.svg?branch=main)](https://coveralls.io/github/avc-adelaide/auSankey?branch=main)
 
-[![Python package](https://github.com/AUMAG/auSankey/actions/workflows/check.yml/badge.svg)](https://github.com/AUMAG/auSankey/actions/workflows/check.yml)
-[![Jekyll Pages](https://github.com/AUMAG/auSankey/actions/workflows/doc.yml/badge.svg)](https://github.com/AUMAG/auSankey/actions/workflows/doc.yml)
-[![Publish release](https://github.com/AUMAG/ausankey/actions/workflows/release.yml/badge.svg)](https://github.com/AUMAG/ausankey/actions/workflows/release.yml)
+[![Python package](https://github.com/avc-adelaide/auSankey/actions/workflows/check.yml/badge.svg)](https://github.com/avc-adelaide/auSankey/actions/workflows/check.yml)
+[![Jekyll Pages](https://github.com/avc-adelaide/auSankey/actions/workflows/doc.yml/badge.svg)](https://github.com/avc-adelaide/auSankey/actions/workflows/doc.yml)
+[![Publish release](https://github.com/avc-adelaide/ausankey/actions/workflows/release.yml/badge.svg)](https://github.com/avc-adelaide/ausankey/actions/workflows/release.yml)
 
 This package is [available on PyPi](https://pypi.org/project/ausankey/) and can be installed via:
 
     pip install ausankey
 
-User documentation for the repository is published via GitHub Pages: https://aumag.github.io/ausankey/
+User documentation for the repository is published via GitHub Pages: https://avc-adelaide.github.io/ausankey/
 
 Code documentation by Mkdocs is available here:
-https://aumag.github.io/ausankey/reference/
+https://avc-adelaide.github.io/ausankey/reference/
 
 ## Minimal example
 
-![example](https://aumag.github.io/ausankey/iface_frame3_pretty.png)
+![example](https://avc-adelaide.github.io/ausankey/iface_frame3_pretty.png)
 
 ``` python
 import ausankey as sky
