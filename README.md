@@ -41,12 +41,22 @@ data = pd.DataFrame([
 plt.figure()
 sky.sankey(
   data,
-  sort      = “top”,
+  sort      = "top",
   titles    = ["Stage 1","Stage 2","Stage 3"],
   valign    = "center",
 )
 plt.show()
 ```
+
+If you are a `uv` user, this will get you started:
+
+```
+cd ausankey-example && mkdir ausankey-example
+uv init --bare
+uv add ausankey
+uv run ausankey-example.py
+```
+(with `ausankey-example.py` given above.)
 
 ## Requirements
 
