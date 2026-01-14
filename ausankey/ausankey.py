@@ -648,11 +648,7 @@ class Sankey:
                     self.node_indiv_heights[ii][0][lbl] = weight_cont + weight_only + weight_stop
                     self.node_indiv_heights[ii - 1][1][lbl] = weight_cont + weight_only + weight_strt
                 self.node_sizes[ii][lbl] = weight_cont + weight_only + max(weight_stop, weight_strt)
-                self.nodes_largest[lbl] = (
-                    self.node_sizes[ii][lbl]
-                    if self.node_sizes[ii][lbl] > self.nodes_largest.get(lbl, 0)
-                    else self.nodes_largest.get(lbl, 0)
-                )
+                self.nodes_largest[lbl] = max(self.nodes_largest.get(lbl, 0), self.node_sizes[ii][lbl])
 
             self.weight_sum[ii] = pd.Series(self.node_sizes[ii].values()).sum()
 
@@ -810,7 +806,7 @@ class Sankey:
             for label in self.node_sizes[ii + lr]:
                 absval = self.node_sizes[ii + lr][label]
                 val = 100 * self.node_sizes[ii + lr][label] / self.weight_sum[ii + lr]
-                valstr = f"{format(val,self.percent_format)}%"
+                valstr = f"{format(val, self.percent_format)}%"
                 if (
                     (val < 100 * self.percent_thresh)
                     or (absval < self.percent_thresh_val)
@@ -980,7 +976,7 @@ class Sankey:
         valstr = ""
         font = font or self.label_font
         if self.label_values and val is not None:
-            value_fn = self.value_fn or (lambda val: f"{self.label_value_sep}{format(val,self.value_format)}")
+            value_fn = self.value_fn or (lambda val: f"{self.label_value_sep}{format(val, self.value_format)}")
             valstr = value_fn(val)
 
         h_text = self.ax.text(
@@ -1034,7 +1030,7 @@ class Sankey:
         self.ax.text(
             x,
             y,
-            f"{format(val,format_)}",
+            f"{format(val, format_)}",
             {
                 "ha": ha,
                 "va": "center",
